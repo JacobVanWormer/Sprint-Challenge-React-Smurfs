@@ -17,6 +17,13 @@ class SmurfForm extends Component {
     // add code to create the smurf using the api
 
     this.props.addSmurf(this.state.profile);
+    this.setState({
+      profile: {
+        name: '',
+        age: '',
+        height: ''
+      }
+    })
   }
 
   handleInputChange = e => {
